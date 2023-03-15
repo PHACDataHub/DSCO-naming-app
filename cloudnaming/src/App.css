@@ -1,3 +1,55 @@
+.input-row {
+  display: flex;
+}
+
+.req {
+  color: red;
+}
+
+.copyBtn img {
+  max-width: 20px;
+}
+
+.copyBtn img:hover {
+  filter: drop-shadow(16px 16px 20px blue) invert(55%);
+}
+
+.name {
+  display: flex;
+}
+
+#result {
+  display: none;
+  border-radius: 5px;
+  background-color: rgb(199, 199, 199);
+  padding: 25px 50px;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.copied {
+  display: none;
+  max-width: 75px;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0px;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+
+
+.env-options ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.env-options {
+  margin-bottom: 25px;
+}
 
 .header {
   padding: 0px 15px;
@@ -23,11 +75,12 @@
 .nav a:visited {
   text-decoration: none;
 }
-.nav a:hover{
+
+.nav a:hover {
   color: pink;
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   margin-left: 10px;
