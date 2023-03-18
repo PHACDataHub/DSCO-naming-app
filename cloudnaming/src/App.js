@@ -8,9 +8,9 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <div class="header">
+        <div className="header">
           <h1>Cloud Naming Convention</h1>
-          <div class="nav">
+          <div className="nav">
             <Link to="/"> Home </Link>
             <Link to="/validate"> Validate </Link>
             <Link to="/convention"> Convention </Link>
@@ -18,7 +18,7 @@ function App() {
           </div>
         </div>
 
-        <div class="main">
+        <div className="main">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/validate" element={<Validate />} />
