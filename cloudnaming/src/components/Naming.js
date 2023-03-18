@@ -20,7 +20,7 @@ const Naming = () => {
         if (event.target.value === "Dev") {
             setSelectedValue("d");
         } else if (event.target.value === "Test") {
-            setSelectedValue("d");
+            setSelectedValue("t");
         } else if (event.target.value === "Prod") {
             setSelectedValue("p");
         } else if (event.target.value === "Exp") {
