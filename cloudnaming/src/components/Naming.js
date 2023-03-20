@@ -35,6 +35,7 @@ const Naming = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         GetName();
+        displayDiv();
     };
 
 
@@ -44,12 +45,12 @@ const Naming = () => {
     }
 
     function displayDiv() {
-        isActive = !isActive
+        setIsActive(!isActive);
         document.getElementById('result').style.display = 'block';
     }
 
     function displayCopied() {
-        isActive = !isActive
+        setIsActive(!isActive);
         document.getElementById('copied').style.display = 'block';
     }
 
@@ -60,7 +61,7 @@ const Naming = () => {
     }
 
     function displayCopied2() {
-        isActive = !isActive
+        setIsActive(!isActive);
         document.getElementById('copied2').style.display = 'block';
     }
 
