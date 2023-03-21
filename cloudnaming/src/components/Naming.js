@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import copyImg from '../assets/copy-solid.svg';
 
 const Naming = () => {
     const [projName, setProjName] = useState("");
@@ -50,12 +51,13 @@ const Naming = () => {
     }
 
     function displayCopied() {
-        setIsActive(!isActive);
+        setIsActive(true);
         document.getElementById('copied').style.display = 'block';
+        setTimeout(() => document.getElementById('copied').style.display = 'none', 3000);
     }
 
     function copyFolder() {
-        var copyText = this.FolderName;
+        var copyText = FolderName;
         navigator.clipboard.writeText(copyText);
         displayCopied();
     }
@@ -63,6 +65,7 @@ const Naming = () => {
     function displayCopied2() {
         setIsActive(!isActive);
         document.getElementById('copied2').style.display = 'block';
+        setTimeout(() => document.getElementById('copied2').style.display = 'none', 3000);
     }
 
     function copyProj() {
@@ -117,12 +120,12 @@ const Naming = () => {
 
                         <div id="result">
                             <div className="alert alert-secondary">
-                                Folder name: {FolderName} <span className="copyBtn"><img className="copyimg"
-                                    src="../assets/copy-solid.svg"></img></span>
+                                Folder name: {FolderName} <span className="copyBtn" onClick={copyFolder}><img className="copyimg"
+                                    src={copyImg}></img></span>
                                 <span id="copied" className="copied">Copied!</span>
                                 <br></br>
-                                Project name: {ObjectName} <span className="copyBtn"><img className="copyimg"
-                                    src="../assets/copy-solid.svg"></img></span>
+                                Project name: {ObjectName} <span className="copyBtn" onClick={copyProj}><img className="copyimg"
+                                     src={copyImg}></img></span>
                                 <span id="copied2" className="copied" >Copied!</span>
                             </div>
                         </div>
