@@ -41,7 +41,7 @@ const Naming = () => {
 
 
     function GetName() {
-        setObjectName("ph-" + selectedValue + "-" + projName.replace(/\s/g, "").toLowerCase());
+        setObjectName("ph" + selectedValue + "-" + projName.replace(/\s/g, "").toLowerCase());
         setFolderName("ph-" + projName.replace(/\s/g, "").toLowerCase());
     }
 
