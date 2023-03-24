@@ -1,8 +1,8 @@
 ---
 name: Feature
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: '[FEAT] - '
+labels: 'Type: Feature'
 assignees: ''
 
 ---
@@ -24,4 +24,4 @@ _No response_
 
 
 </p>
-</details>
+</details> 
