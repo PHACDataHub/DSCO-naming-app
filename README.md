@@ -22,7 +22,7 @@ In this current version, the application is built using React.
 To dive into the code, read the wiki above on how to use GitHub Codespaces.
 
 ## 🤓 Want to contribute?
-Please refer to the [CONTRIBUTING.md](https://github.com/PHACDataHub/DSCO-naming-app/blob/main/CONTRIBUTE.md) to see how we would like the contributions to be structured 😄
+Please refer to the [CONTRIBUTING.md](https://github.com/PHACDataHub/DSCO-naming-app/blob/main/CONTRIBUTING.md) to see how we would like the contributions to be structured 😄
 
 ## 📄License
 Unless otherwise noted, the source code of this project is covered under Crown Copyright, Government of Canada, and is distributed under the [MIT License](LICENSE).
