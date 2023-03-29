@@ -3,8 +3,7 @@
 FROM nginx:1.23-alpine
 
 # Copy the static HTMLs to the nginx directory
-# COPY build /usr/share/nginx/html
-COPY buid:/asdjaksd /usr/share/nginx/html
+COPY build /usr/share/nginx/html
 
 # Copy the nginx configuration template to the nginx config directory
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
