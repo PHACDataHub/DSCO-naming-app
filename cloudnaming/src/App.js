@@ -12,8 +12,7 @@ function App() {
           <h1>Cloud Naming Convention</h1>
           <div className="nav">
             <Link to="/"> Home </Link>
-            <Link to="/validate"> Validate </Link>
-            <Link to="/convention"> Convention </Link>
+            <Link to="/convention"> How it Works </Link>
 
           </div>
         </div>
